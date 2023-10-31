@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e21bbcc9ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player" id="musicPlayer">
+            <div id="music-list">
+                <h1>Songs</h1>
+                <ul id="musicList"></ul>
+            </div>
+            <nav>
+                <a href="../index.html">  
+                 <div class="circle" id="back">
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+                </a>
+                <div class="circle" id="barsParent">
+                    <i class="fa-solid fa-bars" id="bars"></i>
+                </div>
+            </nav>
+            <img src="music/download.jfif" alt="" class="song-img" id="song-img">
+            <h1 id="n">Perfect (Default song)</h1>
+            <p id="a">Ed sheeran</p>
+
+            <audio id="song">
+                <source src="music/05 Perfect.mp3" type="audio/mp3">
+            </audio>
+
+            <div class="time" id="time">00:00/00:00</div>
+            <input type="range" name="" id="progress" value="0">
+
+            <div class="controls">
+                <div id="preButton"><i class="fa-solid fa-backward"></i></div>
+                <div id="ctrlParent" onclick="playPause()"><i class="fa-solid fa-play" id="ctrl" ></i></div>
+                <div id="nextButton"><i class="fa-solid fa-forward"></i></div>
+            </div>
+            <div id="songCounter"></div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
